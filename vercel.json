@@ -12,6 +12,5 @@
       "dest": "/index.js"
     }
   ],
-  "installCommand": "pnpm install",
-  "buildCommand": "pnpm run build"
+  "installCommand": "pnpm install"
 }
