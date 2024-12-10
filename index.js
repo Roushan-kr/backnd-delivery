@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-  res.send("api is ready");
+  res.send("API is ready");
 });
 
 app.use("/user", userRouter);
@@ -21,10 +21,11 @@ app.use("/booking", bookingRouter);
 
 connectDB()
   .then(() => {
-    app.listen(conf.PORT, () => {
-      console.log(`Server running on port ${conf.PORT}`);
-    });
+    console.log(`Database connected successfully.`);
+    // No need to use app.listen in serverless environments
   })
   .catch((error) => {
     console.log(`Error: ${error.message}`);
   });
+
+export default app;
