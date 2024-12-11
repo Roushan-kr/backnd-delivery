@@ -2,9 +2,9 @@ import dotenv from "dotenv";
 dotenv.config();
 
 import express from "express";
-import conf from "./conf/conf.js";
 import userRouter from "./routes/user.routes.js";
 import bookingRouter from "./routes/booking.routes.js";
+import deliveryRouter from "./routes/delivery.routes.js";
 import connectDB from "./conf/db.js";
 
 const app = express();
@@ -18,6 +18,12 @@ app.get("/", (req, res) => {
 
 app.use("/user", userRouter);
 app.use("/booking", bookingRouter);
+app.use("/delivery", deliveryRouter);
+
+// fallback route
+app.use((req, res) => {
+  res.status(404).send({ message: `Route ${req.originalUrl} not found.` });
+});
 
 connectDB()
   .then(() => {
