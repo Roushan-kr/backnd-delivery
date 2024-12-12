@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Delivery Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: #007bff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            margin: 40px auto;
+        }
+
+        .form-container h1 {
+            text-align: center;
+            color: #343a40;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #495057;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .form-group textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Delivery Service</div>
+        <div class="nav-links">
+            <a href="/public/index.html">Home</a>
+            <a href="/public/index-menu-4.html">Order</a>
+            <a href="/public/index-menu-4.html">Items</a>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <h1>Home Delivery Form</h1>
+        <form action="https://backnd-public.vercel.app/delivery" method="POST">
+            <div class="form-group">
+                <label for="customerName">Full Name</label>
+                <input type="text" id="customerName" name="customerName" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="123-456-7890" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="deliveryAddress">Delivery Address</label>
+                <textarea id="deliveryAddress" name="deliveryAddress" placeholder="Enter your full address" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="orderItems">Order Items</label>
+                <textarea id="orderItems" name="orderItems" placeholder="List your order items" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="deliveryFee">Delivery Fee</label>
+                <input type="number" id="deliveryFee" name="deliveryFee" placeholder="Enter delivery fee" required>
+            </div>
+
+            <div class="form-group">
+                <label for="totalAmount">Total Amount</label>
+                <input type="number" id="totalAmount" name="totalAmount" placeholder="Enter total amount" required>
+            </div>
+
+            <div class="form-group">
+                <label for="deliveryDate">Preferred Delivery Date</label>
+                <input type="date" id="deliveryDate" name="deliveryDate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Notes</label>
+                <textarea id="notes" name="notes" placeholder="Additional notes"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

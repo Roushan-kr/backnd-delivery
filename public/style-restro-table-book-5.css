@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* background-color: #f7e2d3; */
+    /* background-image: linear-gradient(180deg, #f7dbc6,#dbf7f7,#f7dbc6); */
+}
+ body,html{
+    height: 100%;
+    /* width: 100%; */
+}
+.container{
+    height: 99%;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    background-image: url(imgs/restro-sitting-area.jpg);
+    background-size: cover;
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container .bg-div{
+    height: 82%;
+    width: 75%;
+    /* border: 10px solid red; */
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    background-image: url(imgs/restro-sitting-area.jpg);
+    background-size: cover;
+    border-radius: 60px;
+    filter: drop-shadow(20px 40px 40px grey);
+    z-index: +2;
+    transition: 1s ;
+}
+.container .bg-div:hover{
+    border: 10px double rgb(103, 196, 230);
+
+}
+.container .bg-div .book-table-box{
+    height: 33vw;
+    width: 28vw;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    background-color: aliceblue;
+    border-radius: 30px;
+    transition: 0.5s;
+    opacity: 0.8;
+    z-index: +3;
+    /* filter: drop-shadow(10px 20px 10px orange); */
+}
+.container .bg-div .book-table-box:hover{
+    /* background-color: #FFDEAD; */
+    filter: drop-shadow(10px 20px 10px orange);
+}
+.border-content{
+    height: 29vw;
+    width: 22vw;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    place-items: center;
+    background-color: aliceblue;
+    transition: 0.5s;
+    z-index: +4;
+}
+/* .container .bg-div .border-content:hover{
+    background-color: #FFDEAD;
+    border-radius: 20px;
+} */
+.text-1{
+    height:4vw;
+    width:22vw;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    place-items: center;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    background-color: aliceblue;
+}
+.book-text{
+    color: #ff5100;
+    background-color: aliceblue;
+}
+.cancel-text{
+    background-color: aliceblue;
+}
+.inputs{
+    height: 19vw;
+    width: 22vw;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: aliceblue;
+}
+.text-input input{
+    height: 2.8vw;
+    width: 22vw;
+    border: 1px solid black;
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+.text-input div{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: aliceblue;
+}
+.book-button{
+    height: 3vw;
+    width: 22vw;
+    font-size: 20px;
+    background-color: #ff5709;
+    border: none;
+    color: aliceblue;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+.book-button:hover{
+    background-color: #fd844b;
+    color:bisque;
+}
+/* .bg-div{
+    background-image: url(imgs/restro-sitting-area.jpg);
+    height: ;
+} */

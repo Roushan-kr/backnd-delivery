@@ -1,0 +1,353 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: #f7e2d3;
+    /* background-image: linear-gradient(180deg, #f7dbc6,#dbf7f7,#f7dbc6); */
+}
+ body,html{
+    height: 100%;
+    /* width: 100%; */
+}
+.nav-main-container{
+    height: 4vw;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    background-color: #f7e2d3;
+    justify-content: space-between;
+    place-items: center;
+    /* position: fixed; */
+    /* background-image: linear-gradient(90deg, #f8e5d7,#dbf7f7,skyblue,rgb(182, 101, 240)); */
+    
+}
+
+.nav-mid{
+    height: 3vw;
+    width: 45vw;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    place-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: 0.5s;
+}
+.nav-mid span:hover{
+    text-decoration: underline;
+    text-decoration-color: #ffb700;
+    text-decoration-thickness: 5px;
+}
+.nav-mid a{
+    text-decoration: none;
+    color: black;
+}
+.nav-leftside{
+    height: 3vw;
+    width: 13vw;
+    /* border: 2px solid black; */
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    place-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* text-decoration: underline #fd969a 3px; */
+    text-shadow: #e37b36;
+}
+.nav-leftside img{
+    height: 50px;
+    width: 50px; 
+    border-radius: 50%;   
+}
+.nav-rightside{
+    height: 3vw;
+    width: 10vw;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    place-items: center;
+    margin-right: 5vw;
+}
+.nav-rightside .home-icon img{
+    height: 25px;
+    width: 25px;
+
+}
+.nav-rightside .search-icon img{
+    height: 25px;
+    width: 25px;
+
+}
+.nav-rightside .contact-icon img{
+    height:25px;
+    width: 25px;
+}
+.seprating-line{
+    height: 5px;
+    width: 100%;
+    background-color: #ff955f;
+    /* position: fixed; */
+}
+
+.content-menu{
+    height: 102vw;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    margin-top: 3vw;
+}
+.content-menu .inner-box{
+    height: 104vw;
+    width: 90%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    place-items: center;
+}
+.content-menu .inner-box .menu{
+    height: 100vw;
+    width: 88vw;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    place-items: center;
+}
+.text-food-menu{
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+    color: #fb5607;
+    margin-bottom: 1vw;
+    margin-top: 2vw;
+}
+
+.content-menu .inner-box .menu .menu-line-1{
+    height: 39vw;
+    width: 75vw;
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    place-items: center;
+}
+.content-menu .inner-box .menu .menu-line-2{
+    height: 39vw;
+    width: 75vw;
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    place-items: center;
+}
+.content-menu .inner-box .menu .menu-line-3{
+    height: 39vw;
+    width: 75vw;
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    place-items: center;
+}
+.content-menu .inner-box .menu .menu-line-4{
+    height: 39vw;
+    width: 75vw;
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    place-items: center;
+}
+.content-menu .inner-box .menu .dish-1{
+    height: 21vw;
+    width: 16vw;
+    border: 2px solid brown;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    place-items: center;   
+    background-color: #fff;
+    transition: ease-in-out 0.5s;
+}
+.content-menu .inner-box .menu .dish-1:hover{
+    background-color: #FFDEAD;
+    filter: drop-shadow(5px 5px 5px orange);
+    color: red;
+    text-shadow: #e37b36;
+}
+.content-menu .inner-box .menu .dish-2{
+    height: 21vw;
+    width: 16vw;
+    border: 2px solid brown;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    place-items: center;   
+    background-color: #fff;
+    transition: ease-in-out 0.5s;
+}
+.content-menu .inner-box .menu .dish-2:hover{
+    background-color: #FFDEAD;
+    filter: drop-shadow(5px 5px 5px orange);
+    color: red;
+    text-shadow: #e37b36;
+}
+.content-menu .inner-box .menu .dish-3{
+    height: 21vw;
+    width: 16vw;
+    border: 2px solid brown;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    place-items: center;   
+    background-color: #fff;
+    transition: ease-in-out 0.5s;
+}
+.content-menu .inner-box .menu .dish-3:hover{
+    background-color: #FFDEAD;
+    filter: drop-shadow(5px 5px 5px orange);
+    color: red;
+    text-shadow: #e37b36;
+}
+.content-menu .inner-box .menu .dish-4{
+    height: 21vw;
+    width: 16vw;
+    border: 2px solid brown;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    place-items: center;   
+    background-color: #fff;
+    transition: ease-in-out 0.5s;
+}
+.content-menu .inner-box .menu .dish-4:hover{
+    background-color: #FFDEAD;
+    filter: drop-shadow(5px 5px 5px orange);
+    color: red;
+    text-shadow: #e37b36;
+}
+
+
+
+
+
+
+
+.menu img{
+    height: 11vw;
+    width: 16vw;
+    border-radius: 29px 29px 0px 0px ;
+    background-size: contain;
+}
+.menu .dish-name{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    background-color: transparent;
+}
+.menu .dish-price{
+    padding-bottom: 17px;
+    background-color: transparent;
+    color: red;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 2s;
+}
+.menu .dish-price:hover{
+    text-decoration: underline;
+}
+
+.seprating-line-2{
+    height: 8px;
+    width: 100%;
+    background-color: #e6b8a2;
+    margin-top: 6vw;
+}
+
+.footer{
+    height: 13vw;
+    width: 100%;
+    /* border-top: 10px; */
+    border-color: #e96122;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    place-items: center;
+    margin-top: 1vw;
+    border-color: #e6b8a2;
+}
+.footer-near-div{
+    height: 12vw;
+    width: 80vw;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    place-items: center;
+}
+.company-img-name-address{
+    /* border: 2px solid red; */
+    height: 13vw;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    place-items: center;
+}
+.company-img-name-address .restaurent-address{
+    color: #fb5607;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 1.5vw;
+}
+.company-name-address{
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid black; */
+    place-items: center;
+    gap: 20px;
+}
+.company-img-name-address img{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+}
+.company-img-name-address .restaurent-name{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500; 
+}
+
+.restro-name{
+    /* border: 2px solid red; */
+    height: 13vw;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    gap: 20px;
+}
+.restro-name img{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+.restro-name .company-name{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}

@@ -1,0 +1,406 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: #f7e2d3;
+    /* background-image: linear-gradient(180deg, #f7dbc6,#dbf7f7,#f7dbc6); */
+}
+ body,html{
+    height: 100%;
+    /* width: 100%; */
+}
+.nav-main-container{
+    height: 4vw;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    background-color: #f7e2d3;
+    justify-content: space-between;
+    place-items: center;
+    /* position: fixed; */
+    /* background-image: linear-gradient(90deg, #f8e5d7,#dbf7f7,skyblue,rgb(182, 101, 240)); */
+    
+}
+
+.nav-mid{
+    height: 3vw;
+    width: 45vw;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    place-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: 0.5s;
+}
+.nav-mid span:hover{
+    text-decoration: underline;
+    text-decoration-color: #ffb700;
+    text-decoration-thickness: 5px;
+}
+.nav-mid a{
+    text-decoration: none;
+    color: black;
+}
+.nav-leftside{
+    height: 3vw;
+    width: 13vw;
+    /* border: 2px solid black; */
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    place-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* text-decoration: underline #fd969a 3px; */
+    text-shadow: #e37b36;
+}
+.nav-leftside img{
+    height: 50px;
+    width: 50px; 
+    border-radius: 50%;   
+}
+.nav-rightside{
+    height: 3vw;
+    width: 10vw;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    place-items: center;
+    margin-right: 5vw;
+}
+.nav-rightside .home-icon img{
+    height: 25px;
+    width: 25px;
+
+}
+.nav-rightside .search-icon img{
+    height: 25px;
+    width: 25px;
+
+}
+.nav-rightside .contact-icon img{
+    height:25px;
+    width: 25px;
+}
+.seprating-line{
+    height: 5px;
+    width: 100%;
+    background-color: #ff955f;
+    /* position: fixed; */
+}
+
+.info-1{
+    height: 35vw;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    place-items: center;
+    gap: 20px;
+}
+.info-1 .about-us-box{
+    height: 30vw;
+    width: 50%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* place-items: center; */
+}
+.info-1 .about-us-box .about-us{
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    color: #fb5607;
+}
+.info-1 .about-us-box .about-us-para{
+    height: auto;
+    width: 45vw;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    word-spacing: 8px;
+    line-height: 25px;
+}
+
+.info-1 .about-us-pic{
+    height: 35vw;
+    width: 35%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    place-items: center;
+}
+.info-1 .about-us-pic img{
+    height: 35vw;
+    width: auto;
+    background-color: transparent;
+    filter: drop-shadow(10px 15px 10px grey);
+    transition: 0.5s;
+    padding-bottom: -20px;
+}
+.info-1 .about-us-pic img:hover{
+    height: 37vw;
+    width: auto;
+    filter: drop-shadow(10px 15px 10px orange);
+   
+}
+
+.info-2{
+    height: 40vw;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    margin-top: 4vw;
+}
+.info-2 .near-div{
+    height: 38vw;
+    width: 85vw;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    place-items: center;
+}
+.info-2 .near-div .our-chefs{
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    color: #fb5607;
+}
+.info-2 .near-div .chefs-list{
+    height: 25vw;
+    width: 80vw;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    place-items: center;
+}
+.info-2 .near-div .chefs-list .chefs{
+    height: 25vw;
+    width: 19vw;
+    border: 3px solid #fab74b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    place-items: center;
+    background-color: white;
+    border-radius: 20px;
+    transition: 0.5s;
+    background-image: url();
+}
+.info-2 .near-div .chefs:hover{
+    background-color: #FFDEAD;
+}
+.info-2 .near-div .chef-1 {
+    height:12vw;
+    width: 10vw;
+    background-color: transparent;
+    filter: drop-shadow(10px 10px 10px grey);
+    transition: 0.5s;
+}
+.info-2 .near-div .chef-2 {
+    height:12vw;
+    width: 8vw;
+    background-color: transparent;
+    filter: drop-shadow(10px 10px 10px grey);
+    transition: 0.5s;
+}
+.info-2 .near-div .chef-3 {
+    height:12vw;
+    width: 8vw;
+    background-color: transparent;
+    filter: drop-shadow(10px 10px 10px grey);
+    transition: 0.5s;
+}
+.info-2 .near-div .chef-4 {
+    height: 12vw;
+    width: 9.5vw;
+    background-color: transparent;
+    filter: drop-shadow(10px 10px 10px grey);
+    transition: 0.5s;
+}
+.info-2 .near-div .chef-1:hover{
+    height: 13vw;
+    width: 11vw;
+    filter: drop-shadow(10px 10px 10px orange);
+}
+.info-2 .near-div .chef-2:hover{
+    height: 13vw;
+    width: 9vw;
+    filter: drop-shadow(10px 10px 10px orange);
+}
+.info-2 .near-div .chef-3:hover{
+    height: 13vw;
+    width: 9vw;
+    filter: drop-shadow(10px 10px 10px orange);
+}
+.info-2 .near-div .chef-4:hover{
+    height: 13vw;
+    width: 10.5vw;
+    filter: drop-shadow(10px 10px 10px orange);
+}
+
+.info-2 .near-div .chefs-list .chefs .chef-name{
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: transparent;
+    font-weight: 600;
+}
+.info-2 .near-div .chefs-list .chefs .chef-speciality{
+    width: 16vw;
+    background-color: transparent;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.info-3{
+    height: 30vw;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    margin: 1vw 0vw 1vw 0vw;
+}
+.info-3 .near-info-3{
+    height: 29vw;
+    width: 90%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    place-items: center;
+}
+.info-3 .near-info-3 .our-story-text{
+    font-size: 45px;
+    color: #fb5607;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+.info-3 .near-info-3 .our-story{
+    width: 80%;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.footer{
+    height: 13vw;
+    width: 100%;
+    /* border-top: 10px; */
+    border-color: #e96122;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    place-items: center;
+    margin-top: 1vw;
+    border-color: #e6b8a2;
+}
+.footer-near-div{
+    height: 12vw;
+    width: 80vw;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    place-items: center;
+}
+.company-img-name-address{
+    /* border: 2px solid red; */
+    height: 13vw;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    place-items: center;
+}
+.company-img-name-address .restaurent-address{
+    color: #fb5607;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 1.5vw;
+}
+.company-name-address{
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid black; */
+    place-items: center;
+    gap: 20px;
+}
+.company-img-name-address img{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+}
+.company-img-name-address .restaurent-name{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500; 
+}
+
+.restro-name{
+    /* border: 2px solid red; */
+    height: 13vw;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    gap: 20px;
+}
+.restro-name img{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+.restro-name .company-name{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+.seprating-line-2{
+    height: 8px;
+    width: 100%;
+    background-color: #e6b8a2;
+    margin-top: 25px;
+}
+
+
+.change-page-button{
+    height: 7vw;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    place-items: center;
+    /* border: 2px solid black; */
+    gap: 10vw;
+    transition: 0.5s;
+    margin-top: 20px;
+}
+.change-page-button .previous-page{
+    height: 3.5vw;
+    width: 3.5vw;
+    border: none;
+}
+change-page-button .previous-page:hover{
+    height: 4vw;
+    width: 4vw;
+}
+.change-page-button .nxt-page{
+    height: 3.5vw;
+    width: 3.5vw;
+    border: none;
+}
+
