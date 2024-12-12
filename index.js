@@ -6,6 +6,7 @@ import userRouter from "./routes/user.routes.js";
 import bookingRouter from "./routes/booking.routes.js";
 import deliveryRouter from "./routes/delivery.routes.js";
 import connectDB from "./conf/db.js";
+import serverless from "serverless-http";
 
 const app = express();
 
@@ -35,4 +36,4 @@ connectDB()
     console.log(`Error: ${error.message}`);
   });
 
-export default app;
+export const handler = serverless(app);
