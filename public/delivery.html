@@ -171,7 +171,8 @@
             type="number"
             id="deliveryFee"
             name="deliveryFee"
-            placeholder="Enter delivery fee"
+            value="40"
+            readonly
             required
           />
         </div>
@@ -207,4 +208,54 @@
       </form>
     </div>
   </body>
+
+  <script>
+    // Function to fetch menu data from the server
+    async function fetchMenu() {
+      try {
+        const response = await fetch('/menu');
+        if (!response.ok) {
+          throw new Error(`Failed to fetch menu: ${response.statusText}`);
+        }
+        return await response.json();
+      } catch (error) {
+        console.error(error);
+        return [];
+      }
+    }
+
+    // Function to calculate the total dynamically
+    async function calculateTotal() {
+      const orderItemsInput = document.getElementById('orderItems');
+      const totalAmountInput = document.getElementById('totalAmount');
+
+      // Get the user's input and split it by commas
+      const items = orderItemsInput.value.split(',').map(item => item.trim());
+
+      // Fetch the menu data
+      const menu = await fetchMenu();
+
+      // Map menu data for easy lookup
+      const menuMap = menu.reduce((acc, item) => {
+        acc[item.name.toLowerCase()] = item.price;
+        return acc;
+      }, {});
+
+      // Calculate the total price
+      let total = 0;
+      for (const item of items) {
+        if (menuMap[item.toLowerCase()]) {
+          total += menuMap[item.toLowerCase()];
+        } else if (item) {
+          console.warn(`Item "${item}" not found in menu.`);
+        }
+      }
+
+      // Update the total amount input field
+      totalAmountInput.value = total;
+    }
+
+    // Attach event listener to dynamically update total on input
+    document.getElementById('orderItems').addEventListener('input', calculateTotal);
+  </script>
 </html>
