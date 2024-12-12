@@ -6,12 +6,13 @@ import userRouter from "./routes/user.routes.js";
 import bookingRouter from "./routes/booking.routes.js";
 import deliveryRouter from "./routes/delivery.routes.js";
 import connectDB from "./conf/db.js";
+import path from "path";
 
 const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static("public"));
+app.use(express.static((path.join(__dirname, 'public'))));
 
 app.get("/", (req, res) => {
   res.send("API is ready");
