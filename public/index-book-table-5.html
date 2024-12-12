@@ -1,57 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hunger Hacker</title>
     <link rel="shortcut icon" href="imgs/logo.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="style-restro-table-book-5.css">
+    <link rel="stylesheet" href="style-restro-table-book-5.css" />
     <style>
-        .scroll-input {
-            overflow-y: auto;
-            max-height: 100px; /* Adjust height as needed */
-        }
+      .scroll-input {
+        overflow-y: auto;
+        max-height: 100px; /* Adjust height as needed */
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="bg-div">
-            <div class="book-table-box">
-                <form class="border-content" action="https://backnd-public.vercel.app/booking/" method="POST">
-                    <div class="text-1"> 
-                        <span class="book-text">Book Your Table</span> 
-                        <span class="cancel-text">x</span> 
-                    </div>
-                    <div class="inputs">
-                        <div class="text-input"> 
-                            <div>Name</div>
-                            <input type="text" name="name" placeholder="Full Name" maxlength="50" required class="scroll-input">
-                        </div>
-                        <div class="text-input"> 
-                            <div>E-mail</div>
-                            <input type="email" name="email" placeholder="example@gmail.com" maxlength="40" required class="scroll-input">
-                        </div>
-                        <div class="text-input"> 
-                            <div>Phone</div>
-                            <input type="tel" name="phone" placeholder="123-456-7890" maxlength="15" required class="scroll-input">
-                        </div>
-                        <div class="text-input"> 
-                            <div>Date</div> 
-                            <input type="date" name="date" required class="scroll-input">
-                        </div>
-                        <div class="text-input"> 
-                            <div>Time</div>
-                            <input type="time" name="time" required class="scroll-input">
-                        </div>
-                        <div class="text-input"> 
-                            <div>Number of People</div>
-                            <input type="number" name="people" placeholder="1" min="1" required class="scroll-input">
-                        </div>
-                    </div>
-                    <button type="submit" class="book-button" style="margin-top: 125px; padding: 20px;">Book</button>
-                </form>
+      <div class="bg-div">
+        <div class="book-table-box">
+          <form class="border-content" action="/booking" method="POST">
+            <div class="text-1">
+              <span class="book-text">Book Your Table</span>
+              <span class="cancel-text">x</span>
             </div>
+            <div class="inputs">
+              <div class="text-input">
+                <div>Name</div>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Full Name"
+                  maxlength="50"
+                  required
+                  class="scroll-input"
+                />
+              </div>
+              <div class="text-input">
+                <div>E-mail</div>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="example@gmail.com"
+                  maxlength="40"
+                  required
+                  class="scroll-input"
+                />
+              </div>
+              <div class="text-input">
+                <div>Phone</div>
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="123-456-7890"
+                  maxlength="15"
+                  required
+                  class="scroll-input"
+                />
+              </div>
+              <div class="text-input">
+                <div>Date</div>
+                <input type="date" name="date" required class="scroll-input" />
+              </div>
+              <div class="text-input">
+                <div>Time</div>
+                <input type="time" name="time" required class="scroll-input" />
+              </div>
+              <div class="text-input">
+                <div>Number of People</div>
+                <input
+                  type="number"
+                  name="people"
+                  placeholder="1"
+                  min="1"
+                  required
+                  class="scroll-input"
+                />
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="book-button"
+              style="margin-top: 125px; padding: 20px"
+            >
+              Book
+            </button>
+          </form>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
