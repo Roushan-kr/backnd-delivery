@@ -6,7 +6,8 @@ import userRouter from "./routes/user.routes.js";
 import bookingRouter from "./routes/booking.routes.js";
 import deliveryRouter from "./routes/delivery.routes.js";
 import connectDB from "./conf/db.js";
-import serverless from "serverless-http";
+// import serverless from "serverless-http";
+import {menu} from './menu.js'
 
 const app = express();
 
@@ -21,6 +22,9 @@ app.get("/", (req, res) => {
 app.use("/user", userRouter);
 app.use("/booking", bookingRouter);
 app.use("/delivery", deliveryRouter);
+app.get("/menu", (req, res) => {
+ res.status(200).send(menu);
+});
 
 // fallback route
 app.use((req, res) => {
